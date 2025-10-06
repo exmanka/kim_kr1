@@ -11,6 +11,7 @@ def index(request):
 
   context = {
       'some_exposed_secret': os.environ.get('FIREBASE_API_KEY'),
-      'text_from_file': text_from_file
+      'text_from_file': text_from_file,
+      'text_from_file2': "text_from_file",
   }
   return render(request, "index.html", context)
