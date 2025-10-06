@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Task Tracker</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        {% csrf_token %}
+        <div class="container">
+            <br />
+            <h2><strong>Task Tracker 📝 Ким М.А. </strong></h2>
+
+            <br />
+
+            <ul class="list-group">
+                <li class="list-group-item mb-2">3.1. Переносли базы данных проекта</li>
+                <li class="list-group-item mb-2">3.2. Создали новое приложение tasks на Django</li>
+                <li class="list-group-item mb-2">3.3. Подключили приложение в конфигурацию</li>
+                <li class="list-group-item mb-2">3.4. Перезагрузили сервер</li>
+                <li class="list-group-item mb-2">3.5. Вызвали функцию представления</li>
+                <li class="list-group-item mb-2">3.6. Добавили логику представления</li>
+                <li class="list-group-item mb-2">3.7. Создали папку в templates/stasks/impor</li>
+                <li class="list-group-item mb-2">3.8. Импортировали код приложения в index.html</li>
+                <li class="list-group-item mb-2">3.9. Изменили код так, чтобы он включал фамилию</li>
+                <li class="list-group-item mb-2">3.10. Оформили текущий список в index.html проекта</li>
+                <li class="list-group-item mb-2">3.11. Создали секретный ключ и вывели его в приложении</li>
+                <li class="list-group-item mb-2">3.12. Нашли изменения в коде соседа и описали его комментарием</li>
+                <li class="list-group-item mb-2">3.13. Удалили в коде </li>
+                <li class="list-group-item mb-2">3.14. </li>
+                <li class="list-group-item mb-2">3.15. </li>
+                <li class="list-group-item mb-2">3.16. </li>
+                <li class="list-group-item mb-2">3.17. </li>
+                <li class="list-group-item mb-2">3.18. </li>
+                <li class="list-group-item mb-2">3.19. </li>
+                <li class="list-group-item mb-2">3.20. </li>
+            </ul>
+        </div>
+
+        <footer class="container mt-5 mb-3">
+            <hr>
+            <p class="text-muted">Секрет: {{ some_exposed_secret }}</p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
