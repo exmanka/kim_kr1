@@ -6,6 +6,7 @@ hidden = [".pythonlibs"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["iproute2"]
 
 [unitTest]
 language = "python3"
@@ -13,10 +14,6 @@ language = "python3"
 [deployment]
 run = ["python", "manage.py", "runserver", "0.0.0.0:3000"]
 deploymentTarget = "gce"
-
-[[ports]]
-localPort = 3000
-externalPort = 80
 
 [[ports]]
 localPort = 5000
